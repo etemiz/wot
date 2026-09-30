@@ -1,0 +1,2 @@
+websockets>=12
+lmdb>=1.5

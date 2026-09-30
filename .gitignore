@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+wot-db*/
+mostar-db/
+wot.toml
+tools/
+*.log
+nohup.out

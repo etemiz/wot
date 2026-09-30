@@ -1,0 +1,13 @@
+[Unit]
+Description=nostr web of trust builder
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=%h/o/wot
+ExecStart=%h/o/wot/.venv/bin/python %h/o/wot/build_wot.py --config %h/o/wot/wot.toml
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,38 @@
+[relays]
+seed = ["wss://nos.lol", "wss://nostr.mom", "wss://relay.damus.io", "wss://relayable.org", "wss://relay.nostr.band"]
+blacklist = []
+insecure = []
+max_relays = 50
+discover = true
+discover_top = 1000
+
+[roots]
+"npub1m4ny6hjqzepn4rxknuq94c2gpqzr29ufkkw7ttcxyak7v43n6vvsajc2jl" = 0.8
+"npub1pvgcusxk7006hvtlyx555erhq8c5pk9svw57snlxujpkgnkup89sekdx8c" = 0.8
+"npub1a2cww4kn9wqte4ry70vyfwqyqvpswksna27rtxd8vty6c74era8sdcw83a" = 0.8
+"npub1tjyl4n64583tgn2xjlsf3v6dvce07endn6upnj5tykkzl09hfhdsyq0e9k" = 0.8
+"npub1ahxjq4v0zlvexf7cg8j9stumqp3nrtzqzzqxa7szpmcdgqrcumdq0h5ech" = 0.8
+"npub1hu3hdctm5nkzd8gslnyedfr5ddz3z547jqcl5j88g4fame2jd08qh6h8nh" = 0.8
+"npub1htvcvuuq7met3agd8luxn2hhthyes7tjqjnuskjt7muth87qwpuq08qt0m" = 0.8
+"npub1jt0x3vsnqtazzda3ewa8ykdch2t8k566qhrd9vyy0k0ntleu744q8h6q3n" = 0.8
+
+[crawl]
+history_days = 21
+page_limit = 500
+batch_timeout_s = 3600.0
+eose_timeout_s = 60.0
+max_attempts = 5
+
+[trust]
+decay = 0.7
+top_n = 10
+hub_min_follows = 20
+hub_exponent = 0.3
+
+[storage]
+lmdb_path = "wot-db"
+map_size_gb = 10.0
+
+[live]
+recompute_interval_s = 300.0
+batch_refresh_s = 21600.0
