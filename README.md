@@ -132,6 +132,16 @@ root sets.
 - Each relay reconnects independently with exponential backoff; a relay that rejects the
   request is marked failed for the run and does not block scoring.
 
+## Comparison with brainstorm.world
+
+Our 21-day store vs [brainstorm.world](https://brainstorm.world) influence scores over 130
+shared pubkeys:
+
+![brainstorm.world vs ours](tests/brainstorm-vs-ours-combined.png)
+
+Pearson +0.47 / Spearman +0.47: 
+the scores generally agree, but some disagreement is always good for decentralization.
+
 ## License
 
 MIT
